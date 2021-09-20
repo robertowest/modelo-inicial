@@ -1,0 +1,14 @@
+{% load mis_tags %}
+
+<div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+
+        {# include 'includes/sidebar-inner.html' #}
+
+        {% comment %}
+        cargamos el template del directorio local de la aplicación
+        si no existe cargará el que se encuentre en el directorio público
+        {% endcomment %}
+        {% include "sidebar-inner"|local_include_exists:request.resolver_match.app_name %}
+    </nav>
+</div>
