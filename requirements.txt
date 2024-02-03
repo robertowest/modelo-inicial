@@ -1,20 +1,22 @@
 # pip install "django>=2.1,<2.2"
 # 2.2.11
-django
+django==2.2.11
 wheel
 pylint
 
-django-split-settings
-django-crispy-forms
-django-tables2
-django-filter
+django-split-settings==1.2.0
+django-crispy-forms==1.7.2
+django-tables2==2.2.0
+django-filter==2.2.0
+django-select2==5.4.0
+
+django-debug-toolbar==2.2
 
 # python-decouple
 # django-ckeditor
 # django-mathfilters
 # python-social-auth
 # social-auth-app-django
-# django-debug-toolbar
 # django-crispy-forms
 # django-templated-email
 # django-next-prev
