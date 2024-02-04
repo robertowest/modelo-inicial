@@ -1,34 +1,45 @@
-# pip install "django>=2.1,<2.2"
-# 2.2.11
-django==2.2.11
-wheel
-pylint
+# # pip install "django>=2.1,<2.2"
+# # 2.2.11
+# django==2.2.11
+# wheel
+# pylint
 
+# django-split-settings==1.2.0
+# django-crispy-forms==1.7.2
+# django-tables2==2.2.0
+# django-filter==2.2.0
+# django-select2==5.4.0
+
+# django-debug-toolbar==2.2
+
+# # python-decouple
+# # django-ckeditor
+# # django-mathfilters
+# # python-social-auth
+# # social-auth-app-django
+# # django-crispy-forms
+# # django-templated-email
+# # django-next-prev
+# # fdb
+# # django-firebird==1.11
+# # # instalamos manualmente los driver 2.0 de firebird
+
+# # # -------------------------------------------------
+# # # dentro de pruebas
+# # # -------------------------------------------------
+# # django-widget-tweaks
+# # django-tables2
+# # django-search-views
+# # django-filter
+# # django-bootstrap3
+
+
+django==4.2.9
+django-debug-toolbar==4.3.0
+django-crispy-forms==2.1
+crispy-bootstrap4==2023.1
+django-filter==23.5
+django-tables2==2.7.0
+django-select2==8.1.2
+django-bootstrap4==24.1
 django-split-settings==1.2.0
-django-crispy-forms==1.7.2
-django-tables2==2.2.0
-django-filter==2.2.0
-django-select2==5.4.0
-
-django-debug-toolbar==2.2
-
-# python-decouple
-# django-ckeditor
-# django-mathfilters
-# python-social-auth
-# social-auth-app-django
-# django-crispy-forms
-# django-templated-email
-# django-next-prev
-# fdb
-# django-firebird==1.11
-# # instalamos manualmente los driver 2.0 de firebird
-
-# # -------------------------------------------------
-# # dentro de pruebas
-# # -------------------------------------------------
-# django-widget-tweaks
-# django-tables2
-# django-search-views
-# django-filter
-# django-bootstrap3

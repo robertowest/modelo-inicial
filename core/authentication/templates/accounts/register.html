@@ -13,12 +13,12 @@
                 <div class="col-lg-5">
                     <div class="card shadow-lg border-0 rounded-lg mt-5">
                         <div class="card-header text-center">
-                            <h3 class="text-center font-weight-light my-4">Register</h3>
+                            <h3 class="text-center font-weight-light my-4">Registro</h3>
                             <span class="text-center">
                                 {% if msg %}
                                     {{ msg | safe }}
                                 {% else %}
-                                    Add your credentials
+                                    Ingrese sus credenciales
                                 {% endif %} 
                             </span>                            
                         </div>
@@ -31,7 +31,7 @@
                                 <div class="form-row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="small mb-1" for="inputFirstName">Username</label>
+                                            <label class="small mb-1" for="inputFirstName">Usuario</label>
                                             {{ form.username }}
                                         </div>
                                         <span class="text-error">{{ form.username.errors }}</span>
@@ -39,27 +39,28 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="small mb-1" for="inputEmailAddress">Email</label>
+                                    <label class="small mb-1" for="inputEmailAddress">Correo electrónico</label>
                                     {{ form.email }}
                                 </div>
                                 <span class="text-error">{{ form.email.errors }}</span>
                                     
                                 <div class="form-group">
-                                    <label class="small mb-1" for="inputPassword">Password</label>
+                                    <label class="small mb-1" for="inputPassword">Contraseña</label>
                                     {{ form.password1 }}
                                 </div>
                                 <span class="text-error">{{ form.password1.errors }}</span>
 
                                 <div class="form-group">
-                                    <label class="small mb-1" for="inputPassword">Password Check</label>
+                                    <label class="small mb-1" for="inputPassword">Confirmar contraseña</label>
                                     {{ form.password2 }}
                                 </div>             
                                 <span class="text-error">{{ form.password2.errors }}</span>                   
                                     
                                 <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                    <button type="submit" name="register" class="btn btn-primary">Register</button>
+                                    <button type="submit" name="register" class="btn btn-primary">Registrar</button>
                                     <div class="small">
-                                        <a href="{% url 'login' %}">Have an account? Login!</a></div>
+                                        ¿Tienes una cuenta? <a href="{% url 'login' %}">Conéctese</a>
+                                    </div>
                                 </div>
 
                             </form>

@@ -18,12 +18,12 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path("accounts/", include("core.authentication.urls")),
+    # path('accounts/', include('core.authentication.urls')),
 
-    path("", include("apps.home.urls")),
-    path("diccionario/", include("apps.diccionario.urls")),
-    path("persona/", include("apps.persona.urls")),
-    path("domicilio/", include("apps.domicilio.urls.domicilioUrls")),
+    path('',             include('apps.home.urls')),
+    path('diccionario/', include('apps.diccionario.urls')),
+    path('persona/',     include('apps.persona.urls')),
+    path('domicilio/',   include('apps.domicilio.urls.domicilioUrls')),
 ]
 
 
@@ -31,10 +31,10 @@ from django.contrib.auth.views import LogoutView
 from core.authentication.views import login_view, register_user, login_redirect
 
 urlpatterns += [
-    path('login/', login_view, name="login"),
-    path('register/', register_user, name="register"),
-    path("logout/", LogoutView.as_view(), name="logout"),
-    path("redirect/", login_redirect, name="redirect"),
+    path('login/',    login_view,           name='login'),
+    path('register/', register_user,        name='register'),
+    path('logout/',   LogoutView.as_view(), name='logout'),
+    path('redirect/', login_redirect,       name='redirect'),
 ]
 
 
@@ -46,10 +46,10 @@ if settings.DEBUG:
             path('__debug__/', include(debug_toolbar.urls))
         ]
 
-    urlpatterns += [
-        path("ui/", include("core.UI.urls")),
-    ]
+    # urlpatterns += [
+    #     path("ui/", include("core.UI.urls")),
+    # ]
 
     from django.conf.urls.static import static
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL,  document_root=settings.MEDIA_ROOT)

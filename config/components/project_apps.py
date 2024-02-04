@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------
 INSTALLED_APPS += [
     'core.common',
-    'core.UI', 
+    # 'core.UI', 
 
     'apps.home',
     'apps.diccionario',
